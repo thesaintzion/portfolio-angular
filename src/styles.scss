@@ -1,1 +1,88 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Importing Bootstrap SCSS file. */
+
+@import '~bootstrap/scss/bootstrap';
+:root {
+    --appRed: #e40521;
+    --appRedLight: #ffe9e9;
+}
+
+// * {
+//     transition: 800ms;
+// }
+.app-header {
+    a.active {
+        // color: var(--appRed);
+        border-color: var(--appRed) !important;
+    }
+}
+
+.rounded-10 {
+    border-radius: 10px !important;
+}
+
+// ====== CSS ===== //
+.app-red-bg {
+    background-color: var(--appRed) !important;
+}
+
+.app-red-color {
+    color: var(--appRed) !important;
+}
+
+.app-red-border {
+    border-color: var(--appRed) !important;
+}
+
+.app-red-light-bg {
+    background-color: var(--appRedLight) !important;
+}
+
+.app-red-light-color {
+    color: var(--appRedLight) !important;
+}
+
+.app-red-light-border {
+    border-color: var(--appRedLight) !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    // ::-webkit-scrollbar-thumb {
+    //     background-color: rgb(240, 240, 240) !important;
+    // }
+     ::-webkit-scrollbar,
+     ::-webkit-scrollbar-thumb {
+        width: 10px;
+        border-radius: 50px;
+        background-clip: padding-box;
+        height: 10px !important;
+        background-color: #000 !important;
+    }
+     ::-webkit-scrollbar-thumb {
+        background-color: lightgray !important;
+    }
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 575px) {
+    svg#rocket-smoke {
+        display: none;
+        visibility: hidden;
+    }
+}
