@@ -1,24 +1,54 @@
-<main>
+<main class="animated heartBeat">
     <div class="container content">
         <div class="row">
-            <div class="col-lg-6 text-white">
+            <div class="col-lg-6 text-white animate zoomIn delay-1s faster">
                 <h1 class="mb-5">LET'S TALK</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus, et quaerat, quasi eaque obcaecati vel a tempore repudiandae ullam doloribus quibusdam amet unde, quae architecto exercitationem sit dolores consequatur?</p>
-            </div>
-            <div class="col-lg-6 form">
 
-                <div>
+                <div class="flex-wrap d-flex justify-content-between flex-column  mt-5">
+                    <div class="mb-3">
+                        <button mat-mini-fab disabled class="app-red-bg app-red-light-color">
+                            <mat-icon>phone</mat-icon>
+                          </button>
+                        <span class="ml-3">+234 9055175876</span>
+                    </div>
+                    <div class="mb-3">
+                        <button mat-mini-fab disabled class="app-red-bg app-red-light-color">
+                            <mat-icon>email</mat-icon>
+                          </button>
+                        <span class="ml-3">saintzion777@gmail.com</span>
+                    </div>
 
-                    <span class="icon-con text-white app-red-bg">
-                        &#64;
-                    </span>
-                    <br>
+                    <div>
+                        <button mat-mini-fab disabled class="app-red-bg app-red-light-color">
+                            <mat-icon>link</mat-icon>
+                          </button>
+
+                        <span class="ml-3">github.com/thesaintzion</span>
+
+                    </div>
 
 
-                    <span class="icon-con text-white app-red-bg">
-                        &#36;
-                    </span>
                 </div>
+            </div>
+            <div class="col-lg-5 ml-auto form py-4 rounded-10 animate zoomIn delay-1s faster">
+
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email" required>
+                    <mat-icon class="text-white" matSuffix>email</mat-icon>
+                </mat-form-field>
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput placeholder="Email" required>
+                    <mat-icon class="text-white" matSuffix>person</mat-icon>
+                </mat-form-field>
+                <mat-form-field class="w-100" appearance="outline">
+                    <mat-label>Say something</mat-label>
+                    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+                </mat-form-field>
+
+                <button mat-raised-button class="app-red-bg app-red-light-color w-100 mt-5 py-2">Submit</button>
             </div>
         </div>
     </div>

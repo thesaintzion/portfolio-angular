@@ -58,6 +58,18 @@ body {
     height: 100%;
 }
 
+button:focus {
+    outline: 1px dotted;
+    outline: none !important;
+    outline: 0 !important;
+    outline: 0px auto #f0f2f5 !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
 @media (min-width: 768px) {
     // ::-webkit-scrollbar-thumb {
     //     background-color: rgb(240, 240, 240) !important;

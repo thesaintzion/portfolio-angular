@@ -18,13 +18,19 @@
         }
         p {
             font-size: 20px;
-            font-weight: 600 !important;
+            // font-weight: 600 !important;
+            line-height: 30px;
             // text-shadow: 0 0 2px #000;
             text-align: justify;
             margin-bottom: 0;
         }
         .form {
-            background-color: rgba(255, 255, 255, 0.5);
+            // background-color: rgba(255, 255, 255, 0.5);
+            height: 100%;
+            .mat-raised-button {
+                border-radius: 60px;
+                font-size: 20px;
+            }
         }
         .icon-con {
             border-radius: 50px;
@@ -32,9 +38,24 @@
             width: 40px;
             text-align: center;
             vertical-align: middle;
-            font-size: 25 px;
+            font-size: 25px;
             font-weight: 700;
             display: inline-block;
         }
+    }
+    /* Border */
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+        color: transparent;
+        // background-color: red;
+        // background-color: var(--appRedLight);
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px !important;
+    }
+    /* Font color */
+    input.mat-input-element {
+        color: #fff !important;
+    }
+    textarea.mat-input-element {
+        color: #fff !important;
     }
 }
