@@ -1,10 +1,17 @@
-<header class="mt-2 px-5 d-flex align-items-center justify-content-between app-header">
-    <div>
-        <h3 routerLink="/" class="mb-0">SAINT</h3>
+<div class="mat-progress-bar-con " *ngIf="sharedService.LOADING">
+    <mat-progress-bar color="warn" mode="indeterminate">
+    </mat-progress-bar>
+</div>
+<header class="mt-2 d-flex align-items-center justify-content-between app-header">
+    <div class="d-flex align-items-center">
+        <div class="d-block d-lg-none h-100 mr-3 text-center">
+            <button mat-fab class="mat-fab shadow-0 shadow-none  bg-transparent">
+        <mat-icon>menu</mat-icon>
+      </button>
+        </div>
+
+        <h3 routerLink="/" class="mb-0 app-red">SAINT</h3>
     </div>
-    <!-- <div class="d-block d-lg-none  border h-100 px-3 text-center">
-        M
-    </div> -->
 
     <nav class=" d-none d-lg-flex align-items-center justify-content-between">
         <a routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="app-link  px-4 h-100 text-white d-flex align-items-center">About</a>
@@ -17,9 +24,59 @@
     <router-outlet></router-outlet>
 </div>
 
-<footer class="app-footer py-2 px-2 d-flex d-flex justify-content-center align-items-center align-items-center">
-    <!-- <div class="mt-5 text-center border">
-        <img class="w-50 mx-auto" src="../assets/img/download.png">
-    </div> -->
 
+<div class="mobile-menu-con d-none ">
+    <div class="mobile-menu shadow">
+        <mat-toolbar class="app-red-bg text-white shadow">
+            <div class="d-flex justify-content-between align-items-center align-content-center w-100">
+                <div>
+                    <a routerLink="/" class="text-white">
+                        <span mat-line>Saint app</span>
+                    </a>
+                </div>
+                <div>
+                    <button mat-icon-button class="app-blue-color">
+                  <mat-icon>close</mat-icon>
+              </button>
+                </div>
+            </div>
+        </mat-toolbar>
+        <div class="inner-con text-white">
+            <div class="flex-wrap d-flex justify-content-between flex-column  mb-sm-10">
+                <div class="mb-3">
+                    <button mat-mini-fab disabled class="app-red-bg app-red-light-color">
+                        <mat-icon>phone</mat-icon>
+                      </button>
+                    <span class="ml-3">+234 8061578814</span>
+                </div>
+                <div class="mb-3">
+                    <button mat-mini-fab disabled class="app-red-bg app-red-light-color">
+                        <mat-icon>email</mat-icon>
+                      </button>
+                    <span class="ml-3">stephen76494@gmail.com</span>
+                </div>
+
+                <div>
+                    <button mat-mini-fab disabled class="app-red-bg app-red-light-color">
+                    <mat-icon>link</mat-icon>
+                  </button>
+
+                    <span class="ml-3">github.com/thesaintzion</span>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="app-footer py-2 px-2 d-flex d-flex justify-content-between align-items-center align-items-center">
+    <!-- <div *ngIf="audio">
+        <audio id="myAudio" controls autoplay loop>
+            <source src="../assets/audio/sound.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+    </div>
+    <button mat-fab class="m-3 mat-fab">
+        <mat-icon>pause</mat-icon>
+      </button> -->
 </footer>

@@ -1,4 +1,16 @@
 :host ::ng-deep {
+    .mat-progress-bar-con {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 999999999999999 !important;
+        background-color: rgba( 255, 255, 255, 0.4) !important;
+        .mat-progress-bar {
+            position: absolute !important;
+        }
+    }
     .app-header {
         position: fixed;
         // background-color: rgba(228, 5, 33, 0.4);
@@ -8,14 +20,17 @@
         z-index: 100;
         color: #ffffff;
         height: 60px;
+        padding-left: 30px;
+        padding-right: 30px;
         &* {
             transition: 800ms;
         }
         // text-align: center;
         h3 {
             font-weight: 900 !important;
-            font-size: 40px;
+            font-size: 35px;
             text-shadow: 0 0 2px #000;
+            // color: var(--appRed);
         }
         nav {
             a {
@@ -33,9 +48,51 @@
         left: 0;
         width: 100%;
         z-index: 100;
+        .mat-fab {
+            background-color: #ffffff !important;
+            .mat-icon {
+                color: var(--appRed) !important;
+            }
+            &:hover {
+                background-color: var(--appRed) !important;
+                .mat-icon {
+                    color: #fff !important;
+                }
+            }
+        }
     }
     .router-con {
         min-height: 100vh;
         background-color: #000;
+    }
+    .mobile-menu-con {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 5, 0, 0.5);
+        // background-color: #5f6061;
+        z-index: 999999;
+        .mobile-menu {
+            // background-color: #fff;
+            background-color: #5f6061;
+            width: 350px;
+            height: 100%;
+            .inner-con {
+                padding: 30px 15px 15px 15px;
+                // padding-right: 15px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .app-header {
+            padding-left: 15px;
+            padding-right: 0px;
+            h3 {
+                font-size: 20px;
+            }
+        }
     }
 }

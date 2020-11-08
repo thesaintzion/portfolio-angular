@@ -7,15 +7,17 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ViewProjectComponent } from './_dialogs/view-project/view-project.component';
 import { SharedModule } from 'src/app/_shared/shared.module';
+import { LoadingComponent } from './_dialogs/loading/loading.component';
 
 
 @NgModule({
-  declarations: [ProjectsComponent, ContactsComponent, SkillsComponent, ViewProjectComponent],
+  declarations: [ProjectsComponent, ContactsComponent, SkillsComponent, ViewProjectComponent, LoadingComponent],
   imports: [
+    SharedModule,
     CommonModule,
     PageRoutingModule,
-    SharedModule
+    
   ],
-  entryComponents: [ViewProjectComponent]
+  entryComponents: [ViewProjectComponent, LoadingComponent]
 })
 export class PageModule { }

@@ -1,1 +1,32 @@
-<p>view-project works!</p>
+<div mat-dialog-title class="d-flex justify-content-between shadow app-red-bg text-white align-items-center py-1 px-2">
+    <div class="d-flex">
+        <div>
+            <button [mat-dialog-close]="true" mat-icon-button tabindex="-1"><mat-icon class="app-blue-color">arrow_back_ios</mat-icon></button>
+        </div>
+
+        <h5 class="mb-0 ml-3 w-100 d-flex align-items-center justify-content-between">
+            <span>{{data?.name}}</span>
+        </h5>
+    </div>
+</div>
+<mat-dialog-content class="mt-0  text-white">
+    <img class="w-100 mb-4   rounded-10 shadow" [src]="data?.img">
+
+
+    <!-- <div *ngIf="data?.link" class="flex-wrap d-flex justify-content-between flex-column mt-3">
+        <div>
+            <button mat-mini-fab disabled class="app-red-bg app-red-light-color">
+                <mat-icon>link</mat-icon>
+              </button>
+
+            <span class="ml-3">{{data?.link}}</span>
+        </div>
+    </div> -->
+
+
+    <a *ngIf="data?.link" type="button" [href]="data?.link" target="_blank" tabindex="-1" mat-raised-button class="view-button  w-100  mt-5 py-1">
+            VISIT
+    </a>
+
+
+</mat-dialog-content>

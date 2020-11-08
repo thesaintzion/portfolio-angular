@@ -65,6 +65,48 @@ button:focus {
     outline: 0px auto #f0f2f5 !important;
 }
 
+.mat-dialog-container {
+    background-color: #5f6061;
+    // background-color: rgba(255, 255, 255, 0.8);
+    .mat-dialog-content {
+        position: relative;
+    }
+    position: relative;
+    display: block;
+}
+
+.dialog-rounded {
+    .mat-dialog-container {
+        border-radius: 15px !important;
+    }
+}
+
+.dialog-no-padding {
+    .mat-dialog-container {
+        padding: 0 !important;
+    }
+}
+
+.backdrop-none {
+    background: transparent !important;
+}
+
+// .dialog-transparent-bg {
+//     .mat-dialog-container {
+//         background-color: rgba(255, 255, 255, 0.5) !important;
+//         background-color: transparent !important;
+//         color: #fff !important;
+//     }
+// }
+.dialog-rounded-none {
+    border-radius: none !important;
+    border-radius: 0 !important;
+    .mat-dialog-container {
+        border-radius: none !important;
+        border-radius: 0 !important;
+    }
+}
+
 html,
 body {
     height: 100%;
@@ -76,11 +118,11 @@ body {
     // }
      ::-webkit-scrollbar,
      ::-webkit-scrollbar-thumb {
-        width: 10px;
+        width: 15px;
         border-radius: 50px;
         background-clip: padding-box;
         height: 10px !important;
-        background-color: #000 !important;
+        background-color: transparent !important;
     }
      ::-webkit-scrollbar-thumb {
         background-color: lightgray !important;
@@ -90,7 +132,14 @@ body {
 
 /* Responsive Styles */
 
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 767px) {
+    .mb-sm-4 {
+        margin-bottom: 20px !important;
+    }
+    .mb-sm-10 {
+        margin-bottom: 50px !important;
+    }
+}
 
 @media screen and (max-width: 575px) {
     svg#rocket-smoke {
