@@ -20,9 +20,6 @@ export class AppComponent implements OnInit {
      setTimeout( () => {
       this.audio = true;
      }, 3000)
- 
-       var x = document.getElementById("myAudio");
-       x.click;
   }
 
 

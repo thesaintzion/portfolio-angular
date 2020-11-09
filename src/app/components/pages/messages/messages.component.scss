@@ -3,7 +3,7 @@
         height: 100vh;
         width: 100%;
         background-color: black;
-        background-image: url('../../../assets/img/bg-one.jpeg');
+        background-image: url('../../../../assets/img/bg-one.jpeg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -13,17 +13,15 @@
     .content {
         h1 {
             font-weight: 900 !important;
-            font-size: 150px;
+            font-size: 50px;
             text-shadow: 0 0 2px #000;
         }
-        p {
-            font-size: 20px;
-            // text-align: justify;
-            text-shadow: 0 0 2px #000;
-            margin-bottom: 0;
+        .head {
+            font-size: 18px;
+            font-weight: 500;
         }
-        .inner {
-            margin-top: 50px;
+        .msg-con {
+            background-color: rgba(255, 255, 255, 0.5);
         }
     }
 }

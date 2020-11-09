@@ -1,0 +1,27 @@
+<main class="animated fadeInUp">
+    <div class="content ">
+        <div class="container">
+            <h1 class="text-white text-center mb-5">Messages</h1>
+
+
+            <div class="d-flex justify-content-between flex-column   mb-sm-10">
+                <div class="mb-3 msg-con text-white d-flex  px-3  py-3 rounded-10 shadow" *ngFor="let message of messages">
+                    <div>
+                        <button mat-mini-fab disabled class="bg-light">
+                            <mat-icon>person</mat-icon>
+                    </button>
+                    </div>
+                    <div class="ml-3">
+                        <p class="head mb-2">{{message?.name}} <small class="text-dark">{{message?.createdAt | date}}</small></p>
+                        <p class="w-100">
+                            {{message?.message}}
+                        </p>
+                        <span matTooltip="Sent Email" [ngClass]="message?.email_sent ? 'bg-success text-light' : 'bg-danger text-light' " class=" d-inline px-2 rounded-10">{{message?.email_sent}}</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</main>
