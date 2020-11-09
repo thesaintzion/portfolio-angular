@@ -2,15 +2,44 @@
     <mat-progress-bar color="warn" mode="indeterminate">
     </mat-progress-bar>
 </div>
+<div *ngIf="loading" class="mat-progress-bar-con2">
+    <mat-progress-bar color="warn" mode="indeterminate">
+    </mat-progress-bar>
+    <!-- <div class="h-100 d-flex align-items-center text-center"> -->
+    <!-- <img src="../assets/img/St.png"> -->
+    <!-- </div> -->
+    <!-- <div class="text-white">
+        <p class="mb-4">St. Stephen | full-tack developer</p>
+    </div> -->
+</div>
 <header class="mt-2 d-flex align-items-center justify-content-between app-header">
     <div class="d-flex align-items-center">
         <div class="d-block d-lg-none h-100 mr-3 text-center">
-            <button mat-fab class="mat-fab shadow-0 shadow-none  bg-transparent">
+            <button [matMenuTriggerFor]="navMenu" mat-fab class="mat-fab shadow-0 shadow-none  bg-transparent">
         <mat-icon>menu</mat-icon>
       </button>
         </div>
 
         <h3 routerLink="/" class="mb-0 app-red">SAINT</h3>
+
+        <mat-menu class="shadow rounded-10 py-0" #navMenu="matMenu" xPosition="before">
+            <button routerLink="/" mat-menu-item class="pr-4">
+            <mat-icon  class="app-red-color">person_outline</mat-icon>
+            <span>About</span>
+            </button>
+
+            <button routerLink="/page/projects" mat-menu-item class="pr-4">
+                <mat-icon  class="app-red-color">dashboard</mat-icon>
+                <span>Projects</span>
+            </button>
+
+            <button routerLink="/page/contacts" mat-menu-item class="pr-4">
+                <mat-icon  class="app-red-color">perm_contact_calendar</mat-icon>
+                <span>Contacts</span>
+            </button>
+
+        </mat-menu>
+
     </div>
 
     <nav class=" d-none d-lg-flex align-items-center justify-content-between">

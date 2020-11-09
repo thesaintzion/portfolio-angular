@@ -58,4 +58,13 @@
     textarea.mat-input-element {
         color: #fff !important;
     }
+    @media screen and (max-width: 767px) {
+        main {
+            padding-top: 150px;
+        }
+        h1 {
+            text-align: left !important;
+            font-size: 40px !important;
+        }
+    }
 }

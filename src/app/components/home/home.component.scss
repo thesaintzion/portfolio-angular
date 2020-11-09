@@ -16,6 +16,7 @@
         h1 {
             font-weight: 900 !important;
             font-size: 50px;
+            text-align: center;
             // text-shadow: 0 0 2px #000;
         }
         p {
@@ -29,6 +30,13 @@
     @media screen and (max-width: 767px) {
         .content {
             width: 100% !important;
+            h1 {
+                text-align: left !important;
+                font-size: 40px !important;
+            }
+        }
+        main {
+            padding-top: 150px;
         }
     }
 }

@@ -56,6 +56,24 @@ body {
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
     height: 100%;
+    &::before {
+        content: "#EndPoliceBrutality";
+        background: #5f6061;
+        color: var(--appRedLight);
+        // opacity: 0.5;
+        font-size: 25px;
+        font-weight: 600;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: fixed;
+        z-index: -1;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
 }
 
 button:focus {

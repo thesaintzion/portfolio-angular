@@ -11,6 +11,21 @@
             position: absolute !important;
         }
     }
+    .mat-progress-bar-con2 {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        z-index: 999999999999999 !important;
+        // background-color: #5f6061 !important;
+        // background-color: rgba( 00, 00, 00, 0.9) !important;
+        img {
+            height: 100px;
+            width: 100px;
+            margin: 0 auto !important;
+        }
+    }
     .app-header {
         position: fixed;
         // background-color: rgba(228, 5, 33, 0.4);

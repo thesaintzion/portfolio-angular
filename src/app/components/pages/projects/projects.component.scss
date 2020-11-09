@@ -41,4 +41,13 @@
             // border: 1px solid #fff;
         }
     }
+    @media screen and (max-width: 767px) {
+        main {
+            padding-top: 150px;
+        }
+        h1 {
+            text-align: left !important;
+            font-size: 40px !important;
+        }
+    }
 }
