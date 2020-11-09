@@ -23,29 +23,44 @@
         <h3 routerLink="/" class="mb-0 app-red">SAINT</h3>
 
         <mat-menu class="shadow rounded-10 py-0" #navMenu="matMenu" xPosition="before">
+
             <button routerLink="/" mat-menu-item class="pr-4">
-            <mat-icon  class="app-red-color">person_outline</mat-icon>
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+            </button>
+
+            <button routerLink="/" mat-menu-item class="pr-4">
+            <mat-icon>person</mat-icon>
             <span>About</span>
             </button>
 
             <button routerLink="/page/projects" mat-menu-item class="pr-4">
-                <mat-icon  class="app-red-color">dashboard</mat-icon>
+                <mat-icon>dashboard</mat-icon>
                 <span>Projects</span>
             </button>
 
             <button routerLink="/page/contacts" mat-menu-item class="pr-4">
-                <mat-icon  class="app-red-color">perm_contact_calendar</mat-icon>
-                <span>Contacts</span>
+                <mat-icon>perm_contact_calendar</mat-icon>
+                <span>Contact</span>
             </button>
+
+            <button routerLink="/page/contacts" mat-menu-item class="pr-4">
+                <mat-icon>perm_contact_calendar</mat-icon>
+                <span>Skills</span>
+            </button>
+
+
+
 
         </mat-menu>
 
     </div>
 
     <nav class=" d-none d-lg-flex align-items-center justify-content-between">
-        <a routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="app-link  px-4 h-100 text-white d-flex align-items-center">About</a>
-        <a routerLink="/page/projects" routerLinkActive="active" class="app-link px-4 h-100 text-white d-flex align-items-center">Projects</a>
-        <a routerLink="/page/contacts" routerLinkActive="active" class="app-link px-4 h-100 text-white d-flex align-items-center">Contacts</a>
+        <a routerLink="/" [routerLinkActiveOptions]="{exact:true}" routerLinkActive="active" class="app-link  px-3 h-100 text-white d-flex align-items-center">About</a>
+        <a routerLink="/page/projects" routerLinkActive="active" class="app-link px-3 h-100 text-white d-flex align-items-center">Projects</a>
+        <a routerLink="/page/contacts" routerLinkActive="active" class="app-link px-3 h-100 text-white d-flex align-items-center">Contact</a>
+        <a routerLink="/page/skills" routerLinkActive="active" class="app-link px-3 h-100 text-white d-flex align-items-center">Skills</a>
         <!-- <a routerLink="/page/more" class="app-link px-4 h-100 text-white d-flex align-items-center">More</a> -->
     </nav>
 </header>

@@ -8,10 +8,11 @@ import { ViewProjectComponent } from './_dialogs/view-project/view-project.compo
 import { SharedModule } from 'src/app/_shared/shared.module';
 import { LoadingComponent } from './_dialogs/loading/loading.component';
 import { MessagesComponent } from './messages/messages.component';
+import { SkillsComponent } from './skills/skills.component';
 
 
 @NgModule({
-  declarations: [ProjectsComponent, ContactsComponent, ViewProjectComponent, LoadingComponent, MessagesComponent],
+  declarations: [ProjectsComponent, ContactsComponent, ViewProjectComponent, LoadingComponent, MessagesComponent, SkillsComponent],
   imports: [
     SharedModule,
     CommonModule,
