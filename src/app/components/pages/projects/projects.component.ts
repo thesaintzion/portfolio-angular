@@ -20,7 +20,7 @@ export class ProjectsComponent implements OnInit {
       role: 'FrontEnd',
     },
     {
-      name: 'Tech Academe Ltd',
+      name: 'Tech Academy Ltd',
       description: 'School management portal',
       link: 'http://tech-academy-app.herokuapp.com',
       img: 'assets/img/tech-academy.png',
@@ -35,7 +35,7 @@ export class ProjectsComponent implements OnInit {
     },
     {
       name: 'Speed Mobile App',
-      description: 'Online competition platform',
+      description: 'Online competition app',
       link: 'https://play.google.com/store/apps/details?id=com.dave.speed',
       img: 'assets/img/speed-app.png',
       role: 'BankEnd'
@@ -58,7 +58,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'My Profile',
       description: 'Portfolio website',
-      link: 'http://localhost:3400',
+      link: '',
       img: 'assets/img/screenshot.png',
       role: 'FullStack'
     }

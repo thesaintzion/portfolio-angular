@@ -10,20 +10,16 @@
         justify-content: center;
     }
     .content {
-        // background-color: rgba(0, 0, 0, 0.2);
         border-radius: 15px;
         width: 50%;
         h1 {
             font-weight: 900 !important;
             font-size: 50px;
             text-align: center;
-            // text-shadow: 0 0 2px #000;
         }
         p {
             font-size: 20px;
             line-height: 30px;
-            // font-weight: 600 !important;
-            // text-shadow: 0 0 2px #000;
             text-align: justify;
         }
     }
