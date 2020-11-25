@@ -43,13 +43,22 @@ export class SkillsComponent implements OnInit {
     {
       name: 'MogoDb',
     },
-    
+    {
+      name: 'Nginx',
+    },
+    {
+      name: 'Apache',
+    },  
+    {
+      name: 'Testing',
+    }, 
+    {
+      name: 'Docker',
+    }, 
     {
       name: 'PWA',
     }, 
-    {
-      name: 'etc',
-    },
+  
    
   ];
  
